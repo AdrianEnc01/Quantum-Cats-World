@@ -1,0 +1,361 @@
+/*Pagina Principal*/
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background: linear-gradient(45deg, #455668, #ebf8e1, #3f87a6);
+}
+
+header {
+    background-color: #455668;
+    padding: 20px 0;
+}
+
+.quantum{
+    text-align: center;
+    padding: 3em 0;
+}
+
+.quantum h1{
+    padding: 20px;
+    font-size: 45px;
+    font-weight: bold;
+}
+
+.caja{
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+
+nav{
+    position: absolute;
+    top:110px;
+    right: 0;
+    
+}
+
+
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration: none;
+}
+
+nav a:hover{
+    color: #5DADE2;
+    text-decoration: underline;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 45px;
+    text-align: center;
+    
+}
+
+#parrafo{
+    font-size: 25px;
+    text-align: justify;
+    padding: 10px;
+}
+
+h2{
+    margin-top: 20px;
+    font-size: 35px;
+    text-align: center;
+
+}
+.otras-razas h2{
+    font-weight: bold;
+
+}
+
+.lista-otras-razas{
+    width: 40%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.items{
+    line-height: 1.5;
+    font-weight: bold;
+}
+
+.items::before{
+    /*Se una para colocar ante de cualquier item*/
+    content: "🐈";
+}
+
+.razas{
+    width: 940px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+
+.razas li{
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+.razas li:hover{
+    border-color:#c78c19;
+}
+
+.razas li:active{
+    border-color:#088c19;
+}
+
+.razas h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.razas li:hover h2{
+    font-size: 33px;
+}
+
+.razas-gatos{
+    width: 200px;
+    margin: 0 20px 20px 0;
+    padding: 15px;
+}
+
+.banner{
+    position: relative;
+    top: 10px; /* ajustar los valores para mover la imagen */
+    left: 1200px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border:2px solid #fff;
+    display: block;
+
+}
+
+footer{
+    margin: 0px 0px;
+    text-align: center;
+    background: #455668;
+    padding:20px;
+}
+strong{
+    font-weight: bold;
+    font-style: italic;
+}
+
+.copyright{
+    color:#FFFFFF;
+    font-size: 13px;
+    margin:10px;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+
+/*Seccion para el Origen de los gatos*/
+
+/* Establece el color de fondo del cuerpo en azul. Establece el tipo de letra a Rubik */
+
+body {
+  background-color: white;
+
+}
+
+/* Alinea el texto del encabezado al centro. */
+ 
+.titulo{
+   font-size: 25px; 
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Establece el ancho del acordeón. Establece el margen a 90px en la parte superior e inferior y auto a la izquierda y derecha */
+
+.acordeon {
+  width: 800px;
+  margin: 90px auto;
+  color: white;
+  background-color:  #455668;
+  padding: 30px 30px;
+}
+.acordeon .contenedor {
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  /* Posiciona las etiquetas en relación con el contenedor. Añade relleno en la parte superior e inferior y aumenta el tamaño de la fuente. También hace que su cursor sea un puntero */
+  
+  .acordeon .etiqueta {
+    position: relative;
+    padding: 10px 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    cursor: pointer;
+  }
+  .acordeon .etiqueta::before {
+    content: '+';
+    color: black;
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  /* Oculta el contenido (altura: 0), disminuye el tamaño de la fuente, justifica el texto y añade la transición */
+  
+  .acordeon .contenido {
+    position: relative;
+    background: #455668;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 780px;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+  
+  /* Añade una línea horizontal entre los contenidos */
+  
+  .acordeon hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid grey;
+  }
+
+  /* Muestra la parte de contenido cuando está activa. Establece la altura */
+
+.acordeon .contenedor.activa .contenido {
+    height: 150px;
+  }
+  
+  /* Cambia de signo positivo a negativo una vez activado */
+  
+  .acordeon .contenedor.activa .etiqueta::before {
+    content: '-';
+    font-size: 30px;
+  }
+  .mitos{
+      color: black;
+  }
+
+  /* Pagina Razas*/
+.descripcion-gatos{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.gatos-izquierda{
+    margin-top: 20px;
+    width: 180px;
+    float: left;
+    margin: 0 20px 20px 0;
+
+}
+
+.gatos-derecha{
+    margin-top: 20px;
+    width: 200px;
+    float: right;
+    margin: 20px 20px 20px 20px;
+
+}
+
+.tipo-gato{
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.descripcion{
+      font-size: 20px;
+      text-align: justify;
+  }
+
+  /*Galeria Gatos*/
+
+  .titulo-galeria{
+      text-align: center;
+      font-weight: bold;
+      font-style: italic;
+      padding: 20px 20px;
+  }
+
+.raza1{
+    width: 650px;
+    margin: 25px 150px;
+}
+ .diferentes-gatos{
+     align-items: center;
+     width: 650px;
+     margin: 0px 150px;
+ }
+
+
+  /* Pagina Contacto*/
+
+  .contacto{
+      text-align: center;
+      margin-top: 15px;
+      margin-bottom: 25px;
+      font-weight: bold;
+      font-style: italic;
+      font-size: x-large;
+  }
+
+  .contactarme{
+      text-align: justify;
+      margin: 10px auto;
+      font-size: medium;
+  }
+
+  form{
+    margin: 40px 0;
+}
+
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin: 0 0 10px;
+}
+
+.input-padron{
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color:white;
+    background: #3f87a6;
+    border:none;
+    border-radius: 5px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover{
+    background: #3f87a6;
+    transform: scale(1.2);
+}
